@@ -6,74 +6,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: dex-postgres-postgresql-0
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 4Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-0e7086ef-836d-4943-ba68-f036131ad4bd
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 100Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-0f948c40-d0c6-4d75-be35-8154f45b772e
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 4Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-11772960-8a61-4a6a-b46b-16c54d25547a
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-1699d92a-a529-4c4b-b2cd-062f7eda8921
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-2a09d4d7-4677-4106-9756-14da64974efa
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -86,10 +21,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-18c434c2-fc58-4212-b009-de95df48ad25
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-b4efc674-3a12-4d5d-a8cc-036f30e53f51
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -102,42 +36,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-1a84c7b2-0293-46e0-baa9-c90df0f3883b
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 4Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-1aeb78a9-36a0-429d-b029-67e797a0a5a2
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-1c80030b-01d7-444b-bc94-3b81485c620f
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-a63e03bd-80ca-4b97-94ae-0174e8d1a2ac
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -150,10 +51,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-20a91858-796c-453a-ab35-4027ad33149e
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-f2d8ce9c-44ae-497d-8be7-5db35e0b96f4
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -166,10 +66,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-2255103d-4a4d-4030-905f-e459f6fdd5b7
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-873a051b-8282-47e3-b04d-3177dafb2490
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -182,10 +81,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-231a92b9-24c3-4623-b524-ef0e5aba734f
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-2658d29a-aedb-404d-a2a8-a3e8eff048e1
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -198,26 +96,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-23a40288-43e6-4f4b-b2fd-6598a15e3e37
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-30804f0a-cff9-418c-8e10-98ec938d6189
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-63a9b73d-65fe-4519-b1eb-a934b0c84b75
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 8Gi
@@ -230,13 +111,12 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-361205af-c556-49c9-b690-462829104ec6
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-d575baa7-887d-4da9-97ab-fbd8e4c102d8
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
-      storage: 4Gi
+      storage: 1Gi
 
   
 ---
@@ -246,13 +126,12 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-3da207fb-f3fc-4f70-941f-b5a2841fbe13
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-9c867d3b-9969-4fc4-849e-ea027b8a01f0
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
-      storage: 10Gi
+      storage: 1Gi
 
   
 ---
@@ -262,13 +141,12 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-3f54404a-3563-49de-b059-0775548bc69b
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-cdfd8964-bfd3-4ac1-9523-19cf6640205f
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
-      storage: 20Gi
+      storage: 1Gi
 
   
 ---
@@ -278,170 +156,9 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-3f8e4d65-03d1-4f83-a0bf-047923ca2206
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-3fe99b8c-f299-4f99-bab2-e0ce5a61feb3
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-475ccf87-7503-498c-887a-55e911041830
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-47cd560a-9b3a-4a09-82c7-3f1d2641fb24
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-4d2d5f14-5871-4626-9a18-092019901169
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-51b82203-34ec-4238-8921-cb06e284c22d
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 20Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-56dc9613-446d-4d71-959b-9ea0aced72a3
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-575b55fa-24d0-44eb-a28e-21d3f95ff047
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 500Mi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-578f5bd5-8754-4b40-9c2f-10a05b47c054
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-586505a6-6912-4fdd-a03e-ca863f1b7c14
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-5d6b903a-9393-4493-97ee-e6a0450b95ba
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-c7e74e97-7568-46f7-9649-5689fc45c529
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 5Gi
@@ -454,492 +171,11 @@ metadata:
   name: REPLACE NAME
   namespace: REPLACE NAMESPACE
 spec:
-  storageClassName: longhorn
-  volumeName: pvc-5db4db75-64b8-4498-b41e-1b1f78263763
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-5e37b9a3-44ba-4d71-95a8-1cc35a2613d0
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 20Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-64b9175d-74a1-4118-9ddf-c800c51a8f28
-  accessModes:
-    - ReadWriteOnce
+  storageClassName: local-path
+  volumeName: pvc-87d5db73-b87a-4844-80ff-71eb8c81a5f8
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 5Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-677ab5d8-cdb4-4b6f-82eb-2c6ae49e7d38
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-6edf4caf-2569-4bee-8c92-70322c57e31e
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-77ffcf12-98cf-4019-82f0-46de5829cb9d
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-7ba1f1b3-d2ab-458d-adaf-2a1e10200a3e
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-91222095-395e-4c5c-bfa9-c3304d6281ec
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-986861da-4725-40d5-a475-1eec8646fabd
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-a3c7807e-de90-4402-ad7d-f39d535c30d9
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-a5479ece-ff36-46d4-a6f0-a44e7a050b55
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-a65e0bb3-bc86-401a-a7ad-35b0d034d21e
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 3Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-ae779efa-83d4-4d16-be43-621fdf54ad6f
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-b19cf9cd-0eb8-4974-9fe8-b88da5a5a019
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-c06201da-d2fc-4a72-9677-f260f2ecc1a4
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-c07adb66-ccc8-47ac-890b-f41848623efc
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-c9544cc6-8334-47f2-9c54-195ebce49990
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-cf1cd6e5-a697-406f-bec3-83ce9010b196
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-cf9bef5d-257c-486e-aad1-82d6b7272a83
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-d164d474-5cc9-487c-ac27-4e4d4fc4bfb8
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-d2159e8f-2df3-4c28-be63-718883e3eaa5
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 20Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e296872f-9a51-4a42-9cbd-85a49c935774
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e3195b73-c1dd-48fb-a7d4-7101f1b7b3c3
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 20Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e31c7576-66ef-499d-baaa-96282ecd477c
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e5c8d997-c468-4411-833d-8368343e0916
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e94173cb-8a38-4a43-98a4-c697ffd2e726
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-e95fc8c8-5f9a-4b0d-88b8-f235b25f0451
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-eb423271-2c67-4dc8-a7ed-7fe068b03a48
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-ebe888c1-30ff-4cfc-b6eb-48852229b022
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 8Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-ef925e76-d26f-48ba-9741-e2e9c3eb99c6
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 5Gi
-
-  
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: REPLACE NAME
-  namespace: REPLACE NAMESPACE
-spec:
-  storageClassName: longhorn
-  volumeName: pvc-f5df6d38-fc82-46d7-817d-278dc76f4292
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
 
   

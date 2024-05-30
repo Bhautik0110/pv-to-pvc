@@ -10,7 +10,8 @@ function generateTemplate(
   pvcNamespace,
   pvcStorageClass,
   pvcVolumeName,
-  pvcSize
+  pvcSize,
+  pvcAccessModes
 ) {
   const templateStr = `
 ---
@@ -22,8 +23,7 @@ metadata:
 spec:
   storageClassName: ${pvcStorageClass}
   volumeName: ${pvcVolumeName}
-  accessModes:
-    - ReadWriteOnce
+  accessModes: [${pvcAccessModes}]
   resources:
     requests:
       storage: ${pvcSize}
@@ -39,7 +39,7 @@ async function main() {
   console.log("below context available!");
   const contexts = kc.getContexts();
   console.log(contexts); // this will print all contexts
-  kc.setCurrentContext(contexts[0].name); // setting context
+  kc.setCurrentContext(contexts[1].name); // setting context
   const k8sApi = kc.makeApiClient(k8s.CoreV1Api);
   const pvs = (await k8sApi.listPersistentVolume()).body.items;
 
@@ -51,7 +51,8 @@ async function main() {
       "REPLACE NAMESPACE",
       pv.spec.storageClassName,
       pv.metadata.name,
-      pv.spec.capacity.storage
+      pv.spec.capacity.storage,
+      pv.spec.accessModes
     );
   });
 
